@@ -1,8 +1,8 @@
 def pius(a, b):
-    return a + b
+    return float(a) + float(b)
 
 def minus(a, b):
-    return a - b
+    return float(a) - float(b)
 
 def mul(a, b):
     return a * b
@@ -31,5 +31,9 @@ if __name__ == '__main__':
     elif act == '*':
         result = mul(input1, input2)
 
-    else:
+    elif act == '/':
         result = divide(input1, input2)
+
+    print(f'사칙 연산 결과: {result}')
+    print("modify1")
+    #왜 안되는데
